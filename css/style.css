@@ -1,4 +1,7 @@
-
+body {
+    max-width: 1500px;
+    width: 100%;
+}
 img {
     width: 100%;
 }
@@ -24,6 +27,7 @@ h1 {
     background-position: 75% 50%;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .header {
     display: flex;
