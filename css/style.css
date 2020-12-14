@@ -41,6 +41,7 @@ h1 {
 	background-size: cover;
 }
 .header-text {
+    margin-top: 100px;
     padding: 10px;
     width: 100%;
     text-align: center;
