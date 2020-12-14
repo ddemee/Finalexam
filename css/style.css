@@ -23,7 +23,12 @@ h1 {
     background-size: cover;
     background-position: 75% 50%;
     width: 100%;
-    height: 700px;
+    height: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .header-nav {
     justify-content: space-between;
@@ -36,7 +41,6 @@ h1 {
 	background-size: cover;
 }
 .header-text {
-    position: absolute;
     bottom: 50px;
     left:  0;
     padding: 10px;
@@ -79,17 +83,17 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100%;
     background: rgb(100,100,100,0.4);
-    position: absolute;
-    bottom: 0;
-    padding:10px 0;
+}
+.icons {
+    margin:5px;
 }
 .fb,
 .gg,
 .inst {
     max-width: 35px;
     width: 100%;
-    margin-bottom: 15px;
     font-size: 14px;
     padding: 5px;
     color: white;
