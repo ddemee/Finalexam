@@ -41,11 +41,10 @@ h1 {
 	background-size: cover;
 }
 .header-text {
-    bottom: 50px;
-    left:  0;
     padding: 10px;
     width: 100%;
     text-align: center;
+    
 }
 .header-text-p{
     font-size: 1em;
