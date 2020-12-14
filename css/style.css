@@ -1,0 +1,113 @@
+
+img {
+    width: 100%;
+}
+nav {
+    z-index: 2;
+}
+.container {
+    max-width: 1100px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1 {
+    width: 100%;
+    font-size: 15px;
+    color:white;
+    text-shadow: 0 0 10px #c71336;
+    margin-bottom: 20px;
+}
+/* ==========
+    header
+=============== */
+.bg {
+    background-image: url(../img/redwine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.header-nav {
+    justify-content: space-between;
+}
+.logo {
+    max-height: 100%;
+	max-width: 100%;
+	width:100px;
+	height:100px;
+	background-size: cover;
+}
+.header-text {
+    position: absolute;
+    bottom: 50px;
+    left:  0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.header-text-p{
+    font-size: 1em;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 50px;
+}
+.visit {
+    width: 40%;
+    border-radius: 30px;
+    background-color:  #ef3b3b;
+    border: 2px #1c2c3c solid  ;
+    padding:15px 20px;
+    box-shadow: 0px 0px 5px #46848b ;
+    transition: all 0.2s ease-in ;
+}
+.visit:hover {
+    
+    background-color: #871000;
+    color: white;
+}
+
+.visit p {
+    font-size: 18px;
+    color: white;
+    /* text-shadow: 0px 0px 3px #52f3f9; */
+    transition: all 0.2s ease;
+}
+.visit p:hover {
+    color: #55ACEE;
+
+}
+.header-rightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    width: 6%;
+    height: 100%;
+    background: rgb(100,100,100,0.4);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fb,
+.gg,
+.inst {
+    max-width: 35px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+
+}
+.fb {
+    background-color: #3B5998;
+    border-radius: 10px;
+}
+.gg {
+    background-color: #DC4E41;
+    border-radius: 10px;
+}
+.inst {
+    background-color: #c861cc;
+    border-radius: 10px;
+}
