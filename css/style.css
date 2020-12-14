@@ -2,9 +2,6 @@
 img {
     width: 100%;
 }
-nav {
-    z-index: 2;
-}
 .container {
     max-width: 1100px;
     width: 95%;
@@ -12,7 +9,7 @@ nav {
 }
 h1 {
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
     color:white;
     text-shadow: 0 0 10px #c71336;
     margin-bottom: 20px;
@@ -24,8 +21,9 @@ h1 {
     background-image: url(../img/redwine.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 75% 50%;
     width: 100%;
-    height: 100%;
+    height: 700px;
 }
 .header-nav {
     justify-content: space-between;
@@ -33,8 +31,8 @@ h1 {
 .logo {
     max-height: 100%;
 	max-width: 100%;
-	width:100px;
-	height:100px;
+	width:200px;
+	height:200px;
 	background-size: cover;
 }
 .header-text {
@@ -52,11 +50,11 @@ h1 {
     margin-bottom: 50px;
 }
 .visit {
-    width: 40%;
+    width: 100%;
     border-radius: 30px;
     background-color:  #ef3b3b;
     border: 2px #1c2c3c solid  ;
-    padding:15px 20px;
+    padding:10px 15px;
     box-shadow: 0px 0px 5px #46848b ;
     transition: all 0.2s ease-in ;
 }
@@ -67,7 +65,7 @@ h1 {
 }
 
 .visit p {
-    font-size: 18px;
+    font-size: 14px;
     color: white;
     /* text-shadow: 0px 0px 3px #52f3f9; */
     transition: all 0.2s ease;
@@ -80,13 +78,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
-    width: 6%;
-    height: 100%;
+    width: 100%;
     background: rgb(100,100,100,0.4);
     position: absolute;
-    right: 0;
-    top: 0;
+    bottom: 0;
+    padding:10px 0;
 }
 .fb,
 .gg,
