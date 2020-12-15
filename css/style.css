@@ -26,6 +26,11 @@ h3 {
     font-size: 30px;
     width: 40%;
 }
+h4 {
+    color: white;
+    font-size: 24px;
+    margin: 33px 0;
+}
 /* ====header====== */
 .header {
     padding: 50px;
@@ -127,14 +132,38 @@ h3 {
     right: 0 ;
     top: 2%;
 }
-.section2-text {
-    
-}
 .section2-text p {
     color: #66667E;
     font-size: 20px;
     width: 50%;
     line-height: 1.55;
     margin: 35px 0;
+
+}
+.section2-col {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    margin: 40px 0;
+}
+.section2-column {
+    width: 32%;
+    box-shadow: 0 10px 30px rgb(0, 0, 0,0.54);
+    padding: 60px 15px;
+}
+.section2-column-img {
+    width: 100%;
+    background-color: #39394D;
+    padding: 20px 35px;
+}
+.section2-column-img img {
+    width: 60px;
+    height: 60px;
+}
+.section2-column p{
+    color: #66667E;
+    font-size: 1em;
 
 }

@@ -1,0 +1,5 @@
+@media (min-width:900px) {
+    .section2-col {
+        flex-direction: row;
+    }
+}
