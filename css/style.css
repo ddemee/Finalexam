@@ -13,10 +13,13 @@ h1 {
     color: white;
     font-size: 35px;
     margin:255px 0 21px 0;
+    opacity: 0.8;
 }
 h2 {
     color: white;
-    font: 24px;
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
 
 
@@ -63,6 +66,8 @@ h2 {
 /* section1 */
 .section1-icon {
     width: 15%;
+    margin:0 10% 0 0;
+
     
 }
 .section1 {
@@ -80,4 +85,12 @@ h2 {
     width: 48%;
     background-color: #20202C;
     box-shadow: 0 0 10px rgb(0, 0,0,.5);
+}
+.section1-text p {
+    font-size: 20px;
+    line-height: 1.55;
+    color: #66667E;
+}
+.section1-image {
+    order: 2;
 }
