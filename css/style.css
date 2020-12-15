@@ -14,6 +14,10 @@ h1 {
     font-size: 35px;
     margin:255px 0 21px 0;
 }
+h2 {
+    color: white;
+    font: 24px;
+}
 
 
 /* ====header====== */
@@ -48,13 +52,32 @@ h1 {
     width: 10%;
     position: absolute;
     top: 151px;
-    left: 783px;
+    left: 50%;
 }
 .header-block {
     margin: 50px 0;
 }
 .header-image {
     width: 55%;
-    position: relative;
-    z-index: 1;
+}
+/* section1 */
+.section1-icon {
+    width: 15%;
+    
+}
+.section1 {
+    justify-content: space-between;
+    margin:10px 0;
+    
+}
+.section1 img{
+    width: 45%;
+    height: 50%;
+
+}
+.section1-text {
+    padding: 30px;
+    width: 48%;
+    background-color: #20202C;
+    box-shadow: 0 0 10px rgb(0, 0,0,.5);
 }
