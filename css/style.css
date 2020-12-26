@@ -270,12 +270,12 @@ nav {
     justify-content: space-between;
     align-items: stretch;
     flex-direction: column;
-    margin: 40px 0;
 }
 .section2-column {
-    width: 32%;
+    width: 100%;
     box-shadow: 0 10px 30px rgb(0, 0, 0,0.54);
     padding: 60px 15px;
+    margin-top: 40px;
 }
 .section2-column-img {
     width: 100%;

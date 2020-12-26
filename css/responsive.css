@@ -23,6 +23,14 @@
     .order2{
         order: 1;
     }
+    /* section2 */
+    .section2-col {
+        margin: 40px 0;
+    }
+    .section2-column {
+        width: 32%;
+        margin-top: 0;
+    }
     /* ==========
         footer
     =============== */
