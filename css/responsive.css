@@ -1,5 +1,28 @@
 @media (min-width:900px) {
-    .section2-col {
+    .section2-col,
+    .footer,
+    .footer-column {
         flex-direction: row;
     }
+    /* ==========
+        footer
+    =============== */
+    .footer-column{
+        width: 60%;
+    }
+    .footer-box{
+        width:40%;
+        margin-left: 50px;
+
+    }
 }
+@media(max-width:1150px) {
+    .footer-column {
+        flex-direction: column;
+        width: 50%;
+    }
+    .footer-box {
+        width: 100%;
+        margin: 1em 0;
+    }
+}  
