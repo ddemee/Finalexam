@@ -177,7 +177,8 @@ nav {
     color: #66667E;
 }
 .header-icon {
-    width: 5%;
+    max-width: 80px;
+    width: 100%; 
     position: absolute;
     left: 50%;
     top: 10%;
@@ -202,7 +203,8 @@ nav {
     position: relative;
 }
 .section1-icon {
-    width: 10%;    
+    max-width: 120px;
+    width: 100%;    
     position: absolute;
     top: 10px;
 }
@@ -214,27 +216,34 @@ nav {
 } */
 .section1 {
     justify-content: space-between;
+    align-items: center;
     margin:20px 0;
+    flex-direction: column;
     
 }
 .section1 img{
-    width: 45%;
+    width: 100%;
 
+}
+.order1{
+    order: 1;
+}
+.order2{
+    order: 2;
 }
 .section1-text {
     padding: 30px;
-    width: 45%;
+    width: 100%;
     background-color: #20202C;
     box-shadow: 0 0 10px rgb(0, 0,0,.5);
+    margin-top: 20px;
 }
 .section1-text p {
     font-size: 20px;
     line-height: 1.55;
     color: #66667E;
 }
-.section1-image {
-    order: 2;
-}
+
 /* section2 */
 .section2 {
     margin: 50px 0;

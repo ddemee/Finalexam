@@ -1,8 +1,27 @@
 @media (min-width:900px) {
     .section2-col,
     .footer,
-    .footer-column {
+    .footer-column,
+    .section1 {
         flex-direction: row;
+    }
+    /* section1 */
+    .section1 {
+        align-items: stretch;
+    }
+    .section1 img{
+        width: 45%;
+    
+    }
+    .section1-text {
+        width: 45%;
+        margin-top: 0;
+    }
+    .order1{
+        order: 2;
+    }
+    .order2{
+        order: 1;
     }
     /* ==========
         footer
