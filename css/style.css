@@ -359,10 +359,31 @@ nav {
 }
 .bttn {
     padding: 20px 70px;
-    background-color: rgb(red, green, blue);
+    background: linear-gradient(to right,#46C2FF 0%,#BD11FA 100%,);
     position: relative;
     display: inline-block;
 }
+
+.bttn {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
+.bttn {
+   margin: 10px;
+   padding: 20px 70px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px rgb(68, 65, 65);
+   border-radius: 10px;
+   display: block;
+ }
+
+ .bttn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
 /* .close {
     position: absolute;
     right: 32px;
