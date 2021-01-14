@@ -40,7 +40,6 @@
         h3 {
             color: white;
             font-size: 20px;
-            width: 40%;
             font-family: 'BPG Classic Medium';
             line-height: 1.7;
         }
@@ -163,7 +162,6 @@
     h3 {
         color: white;
         font-size: 30px;
-        width: 40%;
         font-family: 'BPG Classic Medium';
         line-height: 1.7;
     }
@@ -186,7 +184,6 @@
     .logo {
 
         color: white;
-        width: 30%;
     }
     
     /* section1 */
@@ -226,6 +223,9 @@
     }
     .section2-image {
         max-width: 220px;
+    }
+    .section2-text p {
+        width: 50%;
     }
     /*  */
     .sct3 {

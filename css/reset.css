@@ -48,7 +48,9 @@ a {
 	text-decoration: none; /* no underline */
   }
   
-
+button {
+	outline: none;
+}
   /* default */
 .bold {
 	font-weight: 700;

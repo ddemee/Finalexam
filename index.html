@@ -11,20 +11,20 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script> 
+
         <title>Microsoft Teams </title>
     </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <div class="header">
                 <div class="headerlogo"> 
-                    <a href="index.html"><img class="logo" src="img/teamsn.png" alt="it tech ლოგო"></a>
+                    <a href="https://www.ittech.ge/" target="blancket" ><img class="logo" src="img/Logo_1.png" alt="it tech ლოგო"></a>
                 </div>
                 <nav>
                     <ul class="flex nav-links">
-                        <li><a class="header-aclass" href="#">მთავარი</a></li>
-                        <li><a class="header-aclass" href="#">ჩვენს შესახებ</a></li>
-                        <li><a class="header-aclass" href="#">პროდუქცია</a></li>
+                        <li><a class="header-aclass" href="index.html">მთავარი</a></li>
+                        <li><a class="header-aclass" href="aboutus.html">ჩვენს შესახებ</a></li>
                         <li><a class="header-aclass contact " href="#contact">კონტაქტი</a></li>
                     </ul>
                     <div class="burger">
@@ -42,11 +42,11 @@
         <div class="container">
             <img class="header-icon" src="img/inhead.svg" alt="icon">
             <div class="section1-div">
-                <div class="section1-text-header">
+                <div class="section1-text-header" >
                     <h1>ყველაფერი რაც გჭირდება დისტანიური მუშაობისთვის</h1>
                     <p>იმუშავეთ დისტანციურად Microsoft Teams ის მეშვეობით და შეინარჩუნეთ გუნდურობა. გამოიწერეთ ეს უფასოა.</p>
                 </div>
-                <img src="img/onall.png" alt="">
+                <img src="img/onall.png" alt="icon">
             </div>
 
         </div>
@@ -85,7 +85,7 @@
          </div>
          
     </section>
-    <section class="section2">
+    <section class="section2" >
         <div class="container">
             <div class="section2-text">
                 <h3>ცენტრალიზირებული სივრცე გუნდური მუშაობისთვის</h3>
@@ -175,9 +175,10 @@
             <h5>ჩვენ უკვე ვპარტნიორობთ სხვადასხვა კომპანიებთან</h5>
         </div>
     </section>
-    <section>
+    <section data-aos="fade-left">
         <div class="container section4">
-            <img class="section4-icon" src="img/kvadrati.svg" alt="icon">
+            <img class="section4-icon " src="img/backgteams.png" alt="icon">
+            <img class="section4-icon1 " src="img/kvadrati.svg" alt="icon">
             <h3>გამოიწერე Microsoft Teams, უფასოდ</h3>
             <p class="section4-p">თქვენ შეგიძლიათ გააქტიუროთ Teams ი უფასოდ 6 თვით, ორანიზაციაშიებში  0 დან  1000 თანამშრომლამდე და არ საჭიროებს საკრედიტო ბარათის რეგისტრაციას</p>
             <button class="bttn" id="orderbutton" >შეკვეთა</button>
@@ -212,12 +213,12 @@
                     </button>
                 
                 </div>
-                <a href="#" class="close">
+                <i class="fas fa-times close-button"></i>
             </div>
         </div>
     </section>
 
-    <footer class="bg6" id="contact">
+    <footer class="bg6" id="contact" data-aos="fade-left">
         <div class="container">
             <div class="footer flex">
                 <p >© 2020 შპს აითი თექ</p>
@@ -254,7 +255,8 @@
                             </div>
                         </ul>
                     </div>
-                </div>    
+                </div>
+                <a href="#header"><img class="arrow-up" src="img/rocket1.PNG" alt="rocket icon"></i> </a>    
             </div>
         </div>
 
@@ -269,9 +271,18 @@
         function myFunction() {
           document.getElementById("order").classList.toggle("show");
         }
+        //drddddd 
         document.getElementById("orderbutton").onclick = function(close) {myFunction()};
+        var closebtns = document.getElementsByClassName("close-button");
+        var i;
+        
+        for (i = 0; i < closebtns.length; i++) {
+          closebtns[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+          });
+        }
+        
        
     </script>
- 
 </body>
 </html>
