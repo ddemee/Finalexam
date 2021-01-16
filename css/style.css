@@ -62,14 +62,12 @@ h6 {
     color: white;
     font-size: 24px;
     line-height: 1.7;
-    width: 100%;
+    width:100%;
     font-family: 'BPG Classic Medium';
+    text-align: start;
 }
-hr {
-    width: 100%;
-    height: 5px;
-    color: wheat;
-
+img { 
+    border-radius: 10px;
 }
 
   /* bg1 */
@@ -192,6 +190,9 @@ nav {
     text-align: center;
 }
 /*  */
+.sct1 {
+    margin-top: 50px;
+}
 .section1 {
     justify-content: space-between;
     display: flex;
@@ -573,7 +574,7 @@ form {
      font-size: 15px;
      color: white;
      margin: 30px 0;
-     width: 60%;
+     width: 100%;
      line-height: 1.7;
      
  }
@@ -587,6 +588,12 @@ form {
      
  }
  .aboutus-section {
-     position: relative;
      padding: 30px 0;
+}
+.about-right {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding:100px 0 ;
 }

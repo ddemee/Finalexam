@@ -9,8 +9,10 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
-        <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script> 
+        <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/on.png">
         <title>Microsoft Teams </title>
     </head>
 <body>
@@ -37,16 +39,16 @@
             </div>
         </div>
     </header>
-    <section>
-        <hr>
-        <div>
-            <div class="aboutus-section container ">
-                <h6 class="about-h6">ჩვენს შესახებ</h6>
-                <p>შ.პ.ს "აითი თექ " 2011 წელს დაფუძნდა და მას შემდეგ, კომპიუტერული ტექნიკის ქართულ ბაზარზე აქტიურად მოღვაწეობს.</p>
-                <p>ამჟამად „აითი თექ" წარმოადგენს ონლაინ მაღაზიას, სადაც ნებისმიერი პროდუქტის შეძენა ყველაზე ხელსაყრელ ფასად არის შესაძლებელი.</p>
+    <section">
+        <div class="aboutus-section container  " id="effect">
+            <div class="about-right" data-aos="fade-right">
+                <div>
+                    <h6 class="about-h6">ჩვენს შესახებ</h6>
+                    <p>შ.პ.ს "აითი თექ " 2011 წელს დაფუძნდა და მას შემდეგ, კომპიუტერული ტექნიკის ქართულ ბაზარზე აქტიურად მოღვაწეობს.</p>
+                    <p>ამჟამად „აითი თექ" წარმოადგენს ონლაინ მაღაზიას, სადაც ნებისმიერი პროდუქტის შეძენა ყველაზე ხელსაყრელ ფასად არის შესაძლებელი.</p>
+                </div>
             </div>
-            <hr>
-            <div class="aboutus-section container ">
+            <div data-aos="fade-left">
                 <h6>ჩვენი მიზანი</h6>
                 <ul>
                     <li>შევთავაზოთ ჩვენს მომხმარებელს სასურველი პროდუქციის ყველაზე დიდი არჩევანი.</li>
@@ -57,7 +59,6 @@
                 </ul>
             </div>
         </div>
-        <hr>
     </section>
     <section>
         <div class="container section4">
@@ -167,4 +168,12 @@
         
        
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
+</body>
   

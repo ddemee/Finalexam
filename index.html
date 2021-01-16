@@ -6,11 +6,13 @@
         <meta name="keywords" content="განახორციელე ვიდეო ზარები დაუკავშირდი მეგობრებს და იყავი მუდამ კავშირზე">
         <meta name="author" content="dima demetrashvili">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script> 
+        <link rel="icon" href="img/on.png">
 
         <title>Microsoft Teams </title>
     </head>
@@ -38,7 +40,7 @@
             </div>
         </div>
     </header>
-    <section class="bg-section1">
+    <section class="bg-section1" data-aos="fade">
         <div class="container">
             <img class="header-icon" src="img/inhead.svg" alt="icon">
             <div class="section1-div">
@@ -56,7 +58,7 @@
             <div class="flex sct1-div">
                 <img class="section1-icon" src="img/section1.png" alt="">
             </div>
-            <div class="flex section1">
+            <div class="flex section1" data-aos="fade-right">
                 <img class="section1-image " src="img/gunduri.png" alt="">
                 <div class="section1-text">
                     <h2>
@@ -66,7 +68,7 @@
                 </div>
                 
             </div>
-            <div class="flex section1">
+            <div class="flex section1" data-aos="fade-left">
                 <div class="section1-text order2">
                     <h2>გამოიყენეთ ნებისმიერ მოწყობილობაზე</h2>
                     <p>
@@ -74,7 +76,7 @@
                 </div>
                 <img class="section1-image order1" src="img/alldevice.png" alt="">
             </div>
-            <div class="flex section1">
+            <div class="flex section1" data-aos="fade-right">
                 <img src="img/programs.png" alt="">
                 <div class="section1-text">
                     <h2>სხვადასხვა პროგრამებთან თავსებადობა</h2>
@@ -87,7 +89,7 @@
     </section>
     <section class="section2" >
         <div class="container">
-            <div class="section2-text">
+            <div class="section2-text" >
                 <h3>ცენტრალიზირებული სივრცე გუნდური მუშაობისთვის</h3>
                 <p>ჩვენ ვუზრუნველყობთ თქვენს გუნდს სრული
                     ხელსაწყოების და აპლიკაციების კრებულით რაც აუცილებელია
@@ -95,7 +97,7 @@
             </div>
         <img class="section2-image" src="img/section2.png" alt="">
         </div>
-        <div class="container">
+        <div class="container ">
             <div class="section2-col">
                 <div class="section2-column">
                     <div class="section2-column-img">
@@ -159,7 +161,7 @@
 
         </div>
     </section>
-    <section class="section3">
+    <section class="section3" >
         <div class="container sectio3-relative">
             <img class="section3-icon" src="img/teams-icon.png" alt="icon">
             <div class="flex sct3 ">
@@ -175,7 +177,7 @@
             <h5>ჩვენ უკვე ვპარტნიორობთ სხვადასხვა კომპანიებთან</h5>
         </div>
     </section>
-    <section data-aos="fade-left">
+    <section>
         <div class="container section4">
             <img class="section4-icon " src="img/backgteams.png" alt="icon">
             <img class="section4-icon1 " src="img/kvadrati.svg" alt="icon">
@@ -213,12 +215,11 @@
                     </button>
                 
                 </div>
-                <i class="fas fa-times close-button"></i>
             </div>
         </div>
     </section>
 
-    <footer class="bg6" id="contact" data-aos="fade-left">
+    <footer class="bg6" id="contact">
         <div class="container">
             <div class="footer flex">
                 <p >© 2020 შპს აითი თექ</p>
@@ -255,8 +256,8 @@
                             </div>
                         </ul>
                     </div>
-                </div>
-                <a href="#header"><img class="arrow-up" src="img/rocket1.PNG" alt="rocket icon"></i> </a>    
+                </div>  
+                <a href="#header"><img class="arrow-up" src="img/rocket1.PNG" alt="rocket icon"></i> </a> 
             </div>
         </div>
 
@@ -283,6 +284,13 @@
         }
         
        
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
     </script>
 </body>
 </html>
