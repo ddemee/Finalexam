@@ -161,7 +161,8 @@ nav {
 }
 /* fade */
 .header,
-.bg-section1 {
+.bg-section1,
+.aboutus-section {
     animation: fade 1.5s;
 }
 @keyframes fade {
