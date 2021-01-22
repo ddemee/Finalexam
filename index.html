@@ -12,30 +12,25 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script> 
         <link rel="icon" href="img/on.png">
-
         <title>Microsoft Teams </title>
     </head>
 <body>
     <header id="header">
         <div class="container">
             <div class="header">
-                <div class="headerlogo"> 
-                    <a href="https://www.ittech.ge/" target="blancket" ><img class="logo" src="img/Logo_1.png" alt="it tech ლოგო"></a>
-                </div>
-                <nav>
-                    <ul class="flex nav-links">
+                <nav class="navigation">
+                    <div class="headerlogo"> 
+                        <a href="https://www.ittech.ge/" target="blancket" ><img class="logo" src="img/Logo_1.png" alt="it tech ლოგო"></a>
+                    </div>
+                    <button class="burgerbar" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="flex nav-links" id="nav-ul">
                         <li><a class="header-aclass" href="index.html">მთავარი</a></li>
                         <li><a class="header-aclass" href="aboutus.html">ჩვენს შესახებ</a></li>
                         <li><a class="header-aclass contact " href="#contact">კონტაქტი</a></li>
                     </ul>
-                    <div class="burger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                        
-                    </div>
                 </nav>
-                
             </div>
         </div>
     </header>
@@ -49,7 +44,6 @@
                 </div>
                 <img src="img/onall.png" alt="icon">
             </div>
-
         </div>
     </section>
     <section class="sct1">
@@ -58,7 +52,7 @@
                 <img class="section1-icon" src="img/section1.png" alt="">
             </div>
             <div class="flex section1" data-aos="fade-right">
-                <img class="section1-image " src="img/gunduri.png" alt="">
+                <img class="section1-image " src="img/multi-window-meeting.png" alt="multi-window-meeting">
                 <div class="section1-text">
                     <h2>
                         გუნდური მუშაობის ცენტრი</h2>
@@ -73,10 +67,10 @@
                     <p>
                         Microsoft Teams ი ხელმისაწვდომია: სახლში, მგზავრობისას, პერსონალურ კომპიუტერზე, მობილურ ტელეფონზე და ნებისმიერ პლანშეტურ მოწყობილობაზე. სადაც არის ინტერნეტთან წვდომა, თქვენ შეძლებთ იყოთ მუდამ კავშირზე.</p>
                 </div>
-                <img class="section1-image order1" src="img/alldevice.png" alt="">
+                <img class="section1-image order1" src="img/Teams-topp.jpg" alt="Teams-topp">
             </div>
             <div class="flex section1" data-aos="fade-right">
-                <img src="img/programs.png" alt="">
+                <img src="img/microsoft-teams-additional-tabs-and-apps.jpg" alt="microsoft-teams-additional-tabs-and-apps">
                 <div class="section1-text">
                     <h2>სხვადასხვა პროგრამებთან თავსებადობა</h2>
                     <p>
@@ -284,5 +278,15 @@
         
        
     </script>
+    <script>
+        const hamburger = document.getElementById('hamburger')
+        const navUL =document.getElementById('nav-ul')
+
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+
+        });
+    </script>
+    
 </body>
 </html>

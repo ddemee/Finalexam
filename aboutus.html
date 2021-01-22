@@ -18,23 +18,19 @@
     <header id="header" >
         <div class="container">
             <div class="header">
-                <div class="headerlogo"> 
-                    <a href="index.html"><img class="logo" src="img/Logo_1.png" alt="it tech ლოგო"></a>
-                </div>
-                <nav>
-                    <ul class="flex nav-links">
+                <nav class="navigation">
+                    <div class="headerlogo"> 
+                        <a href="https://www.ittech.ge/" target="blancket" ><img class="logo" src="img/Logo_1.png" alt="it tech ლოგო"></a>
+                    </div>
+                    <button class="burgerbar" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="flex nav-links" id="nav-ul">
                         <li><a class="header-aclass" href="index.html">მთავარი</a></li>
                         <li><a class="header-aclass" href="aboutus.html">ჩვენს შესახებ</a></li>
                         <li><a class="header-aclass contact " href="#contact">კონტაქტი</a></li>
                     </ul>
-                    <div class="burger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                        
-                    </div>
                 </nav>
-                
             </div>
         </div>
     </header>
@@ -167,5 +163,15 @@
         
        
     </script>
+    <script>
+        const hamburger = document.getElementById('hamburger')
+        const navUL =document.getElementById('nav-ul')
+
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+
+        });
+    </script>
+    
 </body>
   

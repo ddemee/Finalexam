@@ -150,14 +150,42 @@ nav {
 .contact:hover {
     border: 2px  #BD11FA solid;
 }
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.navigation ul {
+    display: none;
+    width: 100%;
+}
+.navigation ul.show{
+    display: flex;
+}
+
 .nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    margin: 10px auto;
 }
 .nav-links li {
     margin: 15px;
+}
+/* ========burgerbar====  */
+.burgerbar {
+    background-color: transparent;
+    font-size: 25px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    
+}
+.burgerbar:focus {
+    outline: none;
 }
 /* fade */
 .header,
@@ -175,7 +203,7 @@ nav {
 }
 /* section1 */
 .bg-section1 {
-    background-color: #1a1a2e;
+    background-color: #7B7BAB;
     position: relative;
 }
 .section1-div {
@@ -430,31 +458,6 @@ nav {
    text-decoration: none;
  }
 
-/* .close {
-    position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-  }
-  .close:hover {
-    opacity: 1;
-  }
-  .close:before, .close:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: #wheat;
-  }
-  .close:before {
-    transform: rotate(45deg);
-  }
-  .close:after {
-    transform: rotate(-45deg);
-  } */
 /* shekveta */
 .myorderbutton {
     display: none;

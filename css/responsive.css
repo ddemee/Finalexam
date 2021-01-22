@@ -87,8 +87,25 @@
     }
 }
 
-@media (min-width:680px)
-{
+@media (min-width:680px){
+    /* burgerbar== */
+    .burgerbar {
+        display: none;
+      }
+    /* ========= */
+
+    /* navlinks */
+    .navigation ul {
+        display: flex;
+        width: auto;
+    }
+    .navigation{
+        flex-wrap: nowrap;
+    }
+    .nav-links{
+        margin:0;
+    }
+    /*  */
     .section3-div span {
         transform: rotateY(calc(var(--i)* 73deg)) translateZ(200px);
     }
