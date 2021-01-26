@@ -6,6 +6,9 @@
         <meta name="keywords" content="განახორციელე ვიდეო ზარები დაუკავშირდი მეგობრებს და იყავი მუდამ კავშირზე">
         <meta name="author" content="dima demetrashvili">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =========bootsrap css=============== -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- ==================================== -->
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/fonts.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -180,33 +183,23 @@
         </div>
         <div class=" container myorderbutton" id="order" >
             <div class="flex forms section4-forms">
-                <form action="">
-                    <label for="message"></label>
-                    <textarea class="message1"  name="message" id="message" cols="30" rows="10" placeholder="Message.."></textarea>
-                </form>
-                <div class="forms1" >
-                    <form action="">
-                        <label for="fname"></label>
-                        <input class="frm" type="text" id="fname " name="fname" placeholder="თქვენი სახელი და გვარი...">
+                        <form action="">
+                            <div>
+                                <label for="message"></label>
+                                <textarea class="message1"  name="message" id="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                            </div>
+                            <div class="forms1">
+                                <label for="fname"></label>
+                                <input class="frm" type="text" id="fname" name="fname" placeholder="თქვენი სახელი და გვარი...">
+                                <label for="fname"></label>
+                                <input class="frm" type="text" id="comp-fname" name="comp-fname" placeholder="თქვენი კომპანიის სახელი...">
+                                <label for="fname"></label>
+                                <input class="frm" type="text" id="number" name="number" placeholder="ტელეფონის ნომრები...">
+                                <label for="mailto"></label>
+                                <input class="frm" type="mail" id="mail" name="mailto" placeholder="თქვენი მეილი..">
+                            </div>
                     </form>
-                    <form action="">
-                        <label for="fname"></label>
-                        <input class="frm" type="text" id="comp-fname " name="comp-fname" placeholder="თქვენი კომპანიის სახელი...">
-                    </form>
-                    <form action="">
-                        <label for="fname"></label>
-                        <input class="frm" type="text" id="number " name="number" placeholder="ტელეფონის ნომრები...">
-                    </form>
-                    <form action="">
-                        <label for="mailto"></label>
-                        <input class="frm" type="mail" id="subject " name="mailto" placeholder="თქვენი მეილი..">
-                    </form>
-                    <button class="btn">
-                        შეკვეთა
-                        <i class="fas fa-check plane"></i>
-
-                    </button>
-                
+                    <button class="btn" type="submit">შეკვეთა<i class="fas fa-check plane"></i> </button>
                 </div>
             </div>
         </div>
@@ -256,7 +249,8 @@
 
 
 
-    </footer> 
+    </footer>
+    <!-- form summon js -->
     <script>
         // Get the button, and when the user clicks on it, execute myFunction
         document.getElementById("orderbutton").onclick = function() {myFunction()};
@@ -278,6 +272,7 @@
         
        
     </script>
+    <!-- burgerbar js  -->
     <script>
         const hamburger = document.getElementById('hamburger')
         const navUL =document.getElementById('nav-ul')
@@ -287,6 +282,7 @@
 
         });
     </script>
+    <!-- form JS  -->
     
 </body>
 </html>
