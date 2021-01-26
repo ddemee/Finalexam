@@ -254,16 +254,32 @@ nav {
     background-color: #20202c;
     box-shadow: 0 0 10px rgb(0, 0, 0,.5);
     margin-top: 20px;
+    transition: all 0.5s ease;
     
 }
+/*============== hover ================ */
+.section1-text:hover {
+    background-color: #444A79;
+    margin: 0 5px;
+}
+.section1-text:hover p {
+    margin: 0  5px;
+    font-size: 19.8px;
+}
+/* ================= */
 .section1-text p {
     font-size: 12px;
     line-height: 1.55;
     color: white;
+    transition: all 0.5s ease;
 }
 .section1 img{
     width: 100%;
+    transition: all 0.2s ease;
 
+}
+.section1 img:hover {
+    margin: 0 5px;
 }
 /* First Icon  */
 .section1-icon {
@@ -311,6 +327,7 @@ nav {
     box-shadow: 0 10px 30px rgb(0, 0, 0,0.54);
     padding: 60px 15px;
     margin-top: 40px;
+    transition: all 0.5s ease;
 }
 .section2-column-img {
     width: 100%;
@@ -326,7 +343,12 @@ nav {
     font-size: 1em;
     line-height: 1.55;
     opacity: 0.8;
+    transition: all 1s ease-in;
 
+}
+/* hover */
+.section2-column:hover {
+    background-color: #2A2A3B;
 }
 /* section3  */
 .section3 {
@@ -417,6 +439,7 @@ nav {
     max-width: 200px;
     width: 100%;
     margin-bottom: 30px;
+    transition: all 0.5s ease-in;
 }
 .section4-icon1 {
     width: 10%;
@@ -602,8 +625,6 @@ form {
      line-height: 1.5;
      list-style: circle;
 }
-     
- }
  .aboutus-section {
      padding: 30px 0;
 }
