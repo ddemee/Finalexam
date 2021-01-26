@@ -161,11 +161,12 @@
     }
     h1 {
         color: white;
-        font-size: 28px;
+        font-size: 37px;
         opacity: 0.8;
         line-height: 1.7;
         width: 100%;
         font-family: 'BPG Classic Medium';
+        text-align: left;
         
     }
     h2 {
@@ -201,6 +202,9 @@
     .logo {
 
         color: white;
+    }
+    .section1-text-header p {
+        text-align: left;
     }
     
     /* section1 */
