@@ -84,7 +84,8 @@
     .section4,
     .section4-forms,
     .footer,
-    .footer-column {
+    .footer-column,
+    .about-us-col {
         flex-direction: column;
     }
     /* =========== */
@@ -150,6 +151,13 @@
     .section4 p {
         width: 80%;
         font-size: 18px;
+    }
+    /* about */
+    .about-us-col img {
+        width: 100%;
+    }
+    .about-us-col div {
+        width: 100%;
     }
 }
 @media(max-width:690px) {
