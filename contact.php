@@ -1,6 +1,5 @@
 <?php
  
-
  $name = $_POST ['name'];
  $company = $_POST['company'];
  $number = $_POST['number'];
@@ -22,6 +21,6 @@ $headers = "From: $email_from \r\n";
 $headers .= "Reply-To : $mail \r\n";
 mail($to,$email_body,$headers);
 
-header("Location: Index.html")
+header("Location: index.html")
 
 ?>
