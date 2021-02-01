@@ -17,7 +17,7 @@
                 "User Message : $message.\n";
 
 $to = "wyeula@gmail.com"
-$headers = "Frp, $email_from \r\n";
+$headers = "From: $email_from \r\n";
 
 $headers .= "Reply-To : $mail \r\n";
 mail($to,$email_body,$headers);
