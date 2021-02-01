@@ -1,21 +1,16 @@
 <?php
-    } 
-else                /* send the submitted data */
-    {
-    $name=$_REQUEST['fname'];
-    $company=$_REQUEST['company'];
-    $email=$_REQUEST['mail'];
-    $mobile=$_REQUEST['mobile'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message=="")||($number=="")||($company==""))
-        {
-        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-        }
-    else{        
-        $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-        mail("dim_deme@mail.ru", $subject, $message, $from);
-        echo "Email sent!";
-        }
-    }  
+ if (isset($_POST['submit'])){
+     $name = $_POST ['name'];
+     $company = $_POST ['company'];
+     $mail = $_POST ['mail'];
+     $number = $_POST ['number'];
+     $message = $_POST ['message'];
+     
+
+     $mailto ="dim_deme@mail.ru";
+     $headers = "From:".$mail;
+     $txt = "You Have Received an e-mail from".$name".n\n\".$company.".n\n\".$number.".n\n\".$message.\n" ;
+     mail ($mailto,$name,$txt,$headers);
+     header ("location: index.html?mailsend")
+ }
 ?>
