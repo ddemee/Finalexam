@@ -85,7 +85,8 @@
     .section4-forms,
     .footer,
     .footer-column,
-    .about-us-col {
+    .about-us-col,
+    .contactus {
         flex-direction: column;
     }
     /* =========== */
@@ -133,6 +134,9 @@
         transform: rotateY(calc(var(--i)* 73deg)) translateZ(180px);
     }
     /* ========================= */
+    .contactus {
+        width: 95%;
+    }
     .message1 {
         width: 100%;
     }

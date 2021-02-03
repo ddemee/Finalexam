@@ -447,7 +447,7 @@ nav {
     padding: 20px 70px;
     background: linear-gradient(to right,#46C2FF 0%,#BD11FA 100%,);
     position: relative;
-    display: inline-block;
+
 }
 
 .bttn {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
@@ -463,6 +463,7 @@ nav {
    box-shadow: 0 0 20px rgb(68, 65, 65);
    border-radius: 10px;
    display: block;
+   margin: 30px auto ;
  }
 
  .bttn:hover {
@@ -483,13 +484,15 @@ nav {
 .show {display:block;}
 .hide {display:none;}
 .section4-forms {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
     width: 100%;
 }
+.contactus {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+}
 .message1 {
-    width: 30%;
+    width: 100%;
 }
 textarea {
     resize: none;
@@ -501,7 +504,7 @@ textarea {
     border-radius: 5px;
 }
 .form-col {
-    width: 45%;
+    width: 100%;
     margin-right: 30px;
     display: flex;
     flex-direction: column;

@@ -15,7 +15,7 @@
                 "User Number : $number.\n".
                 "User Message : $message.\n";
 
-$to = "wyeula@gmail.com"
+$to = "dim_deme@mail.ru"
 $headers = "From: $email_from \r\n";
 
 $headers .= "Reply-To : $mail \r\n";
