@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script> 
         <link rel="icon" href="img/on.png">
-        <script src="./index.js"></script>
+        <script src="jquery/jquery-3.5.1.js"></script>
         <title>Microsoft Teams</title>
     </head>
 <body>
@@ -21,14 +21,14 @@
             <div class="header">
                 <nav class="navigation">
                     <div class="headerlogo"> 
-                        <a href="index.html"><img class="logo" src="img/Logo_1.png" alt="it tech ლოგო"></a>
+                        <a href="main"><img class="logo" src="img/Logo_1.png" alt="it tech ლოგო"></a>
                     </div>
                     <button class="burgerbar" id="hamburger">
                         <i class="fas fa-bars"></i>
                     </button>
                     <ul class="flex nav-links" id="nav-ul">
-                        <li><a class="header-aclass" href="index.html">მთავარი</a></li>
-                        <li><a class="header-aclass" href="aboutus.html">ჩვენს შესახებ</a></li>
+                        <li><a class="header-aclass" href="მთავარი">მთავარი</a></li>
+                        <li><a class="header-aclass" href="aboutus">ჩვენს შესახებ</a></li>
                         <li><a class="header-aclass contact " href="#contact">კონტაქტი</a></li>
                     </ul>
                 </nav>
@@ -169,41 +169,45 @@
         </div>
     </section>
     <section>
-        <div class="container section4">
+        <div class="container section4" id="contact">
             <img class="section4-icon " src="img/backgteams.png" alt="icon">
             <img class="section4-icon1 " src="img/kvadrati.svg" alt="icon">
             <h3>გამოიწერე Microsoft Teams, უფასოდ</h3>
             <p>თქვენ შეგიძლიათ გააქტიუროთ Teams ი უფასოდ 6 თვით, ორანიზაციაშიებში  0 დან  1000 თანამშრომლამდე და არ საჭიროებს საკრედიტო ბარათის რეგისტრაციას</p>
-            <form  action="contact.php" class="section4-forms"  method="POST">
-                <div class="contactus">
-                        <div class="form-col"> 
-                            <div class="form-columns">
-                                <label for="fname"></label>
-                                <input class="frm fname" type="text" id="name" name="fname" placeholder="თქვენი სახელი და გვარი...">
-                            </div>
-                            <div class="form-columns">
-                                <label for="fname"></label>
-                                <input class="frm company" type="text" id="company" name="fname" placeholder="თქვენი კომპანიის სახელი...">
-                            </div>
-                            <div class="form-columns">
-                                <label for="fname"></label>
-                                <input class="frm mail" type="text" id="mail" name="fname" placeholder="თქვენი@მეილი.გე.....">
-                            </div>
-                            <div class="form-columns">
-                                <label for="fname"></label>
-                                <input class="frm mobile" type="text" id="mobile" name="fname" placeholder="მობილურის ნომერი...">
-                            </div>
-                        </div>
-                        <div class="message1">
-                            <label for="message"></label>
-                            <textarea class="message2" name="message" id="message" cols="30" rows="10" placeholder="დაგვიტოვეთ შეტყობინება....."></textarea>
-                        </div>
-                </div>
-                <div>
-                    <input type="submit" class="bttn" id="orderbutton" value="შეკვეთა">
-                </div>
-            </form>
+            <div class="pop-button">
+                <h4 class="bttn">მოგვწერეთ</h4>
             </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="pop">
+                            <span>✖</span>
+                            <form id="contact" action="contactus.php" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="თქვენი სახელი..." required>
+                                    </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="თქვენი მეილი..." required>
+                                    </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="თქვენი მესიჯი..." required></textarea>
+                                    </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">გაგზავნა</button>
+                                    </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
 
@@ -280,6 +284,16 @@
         hamburger.addEventListener('click', () => {
             navUL.classList.toggle('show');
 
+        });
+    </script>
+    <script>
+          $(".pop-button").click(function () {
+            $(".pop").fadeIn(300);
+            
+        });
+
+        $(".pop > span").click(function () {
+            $(".pop").fadeOut(300);
         });
     </script>
 </body>
